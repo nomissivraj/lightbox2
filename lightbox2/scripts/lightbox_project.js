@@ -1,6 +1,9 @@
 /* PSEUDO CODE & 
 *   Individual modules that launch 
-*   Work out how i'm going to detect mode - try not to go overly complicated with this. Data attributes will work?
+*   Work out how i'm going to detect mode - try not to go overly complicated with this:
+        CSS Classes (specific images)
+        Self detection (All single images if mode is set to all images)
+        Data Attributes should only be used for extra relate info that can be pulled - not to be used as an identifyer
 */
 
 //variables
