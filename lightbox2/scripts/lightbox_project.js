@@ -4,34 +4,53 @@
 */
 
 //variables
-
+var mode = 'image'; //temporary variable for testing
 //Main functions
 
 function modeCheck() {
     //switch case
+    switch(mode) {
+        case 'image':
+            imageBox()
+            break;
+        case 'gallery':
+            galleryBox()
+            break;
+        case 'modal':
+            modalBox();
+        case 'iframe':
+            iframeBox();
+        default:
+            lightbox();
+    }
+    
 }
 
 function lightbox() {
-    
+    console.log('lit up');
 }
 
 function imageBox() {
     lightbox();
+    console.log('image box');
     //image specific stuff here
 }
 
 function galleryBox() {
     lightbox();
+    console.log('gallery box');
     //gallery specific stuff here
 }
 
 function modalBox() {
     lightbox();
+    console.log('modal box');
     //modal specific stuff here
 }
 
-function iframe() {
+function iframeBox() {
     lightbox();
+    console.log('iframe box');
     //iframe specific stuff here
 }
 
@@ -42,3 +61,6 @@ function iframe() {
 //tab restrictions - accessibility
 
 
+window.onload = function() {
+    console.log('test');
+}
