@@ -11,7 +11,7 @@ var mode = 'image'; //temporary variable for testing
 //Main functions
 
 function modeCheck() {
-    //switch case
+    //This will run on click - when a lightbox element is clicked and will launch the appropriate lightbox
     switch(mode) {
         case 'image':
             imageBox()
@@ -26,7 +26,6 @@ function modeCheck() {
         default:
             lightbox();
     }
-    
 }
 
 function lightbox() {
